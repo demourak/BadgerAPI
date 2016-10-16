@@ -1,0 +1,7 @@
+source 'http://rubygems.org'
+gem 'sinatra'
+gem 'json'
+gem 'rack-parser'
+gem 'activerecord'
+gem 'mysql2'
+gem 'rake'
