@@ -50,12 +50,12 @@ end
 
 # password authentication to be added
 post '/createUser' do
-    request.body.rewind
-		args = JSON.parse request.body.read
-		username = args['username']
-	
-		db = SQLHelper.new
-		response = db.createUser username
-	  JSON.pretty_generate response
+	request.body.rewind
+	args = JSON.parse request.body.read
+	username = args['username']
+
+	db = SQLHelper.new
+	response = db.createUser username
+	JSON.pretty_generate response
 
 end
