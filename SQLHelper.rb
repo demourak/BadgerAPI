@@ -40,8 +40,7 @@ class SQLHelper < ActiveRecord::Migration
 		rescue ActiveRecord::RecordNotUnique => e
 			return {:error => "Username already exists"}
 		else
-			JSON.pretty_generate(array)
-			{:id => user.id, :username => user.username}
+			return {:id => user.id, :username => name}
 		end
 	end
 end
