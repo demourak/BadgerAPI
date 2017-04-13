@@ -5,8 +5,8 @@ end
 
 class SQLHelper < ActiveRecord::Migration
 
-	SQLUsername = 'badgeradmin'
-	SQLPassword = 'AppBadger1!'
+	SQLUsername = '[FILTERED]'
+	SQLPassword = '[FILTERED]'
 	
 	def initialize
 		ActiveRecord::Base.establish_connection(
