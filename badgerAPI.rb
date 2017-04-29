@@ -48,7 +48,6 @@ get '/readUser' do
 	JSON.pretty_generate response
 end
 
-# password authentication to be added
 post '/createUser' do
   request.body.rewind
   args = JSON.parse request.body.read
